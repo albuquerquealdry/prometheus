@@ -2,10 +2,10 @@ on:
   push:
     branches:
       - main
- Deploy:
-      runs-on: ubuntu-latest
-      needs: Build
-      steps:
+jobs:
+  Merge:
+    runs-on: ubuntu-latest
+    steps:
         - name: Conexão com o Cluster Kubernets
           uses: matootie/dokube@v1.3.4
           with:
