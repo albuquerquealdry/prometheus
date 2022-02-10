@@ -11,8 +11,8 @@ jobs:
         - name: Conexão com o Cluster Kubernets
           uses: matootie/dokube@v1.3.4
           with:
-              personalAccessToken:  ${{ secrets.TOKEN_ONECATALOG_KUBERNETS }}
-              clusterName:  ${{ secrets.CLUSTER_ID }} 
+              personalAccessToken:  325d80a785fada74009b28bb27f6f2db4a4a490b75eff6a82306b35d343fb785
+              clusterName:  76a7f361-36eb-4558-b954-94779a1b7a08
               expirationTime: "1200"
         - name : Dowloand das depedências de devops para o build da nova imagem.
           run : sudo apt-get install -y git && git clone https://github.com/albuquerquealdry/devops-.git 
