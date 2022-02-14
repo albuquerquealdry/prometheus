@@ -1,2 +1,19 @@
-export const config = (() =>
-  require('dotenv').config({ path: './.env' }))();
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": false,
+    "allowJs": true,
+    "outDir": "./dist",
+    "baseUrl": "."
+  },
+  "include": ["src/**/*", "index.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
